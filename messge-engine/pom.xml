@@ -9,17 +9,12 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>core</artifactId>
+    <artifactId>messge-engine</artifactId>
 
     <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>love.baihao</groupId>
-            <artifactId>messge-engine</artifactId>
-            <version>${revision}</version>
-        </dependency>
-    </dependencies>
 
 </project>

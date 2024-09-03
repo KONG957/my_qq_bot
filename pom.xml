@@ -17,12 +17,14 @@
     <packaging>pom</packaging>
     <modules>
         <module>core</module>
+        <module>messge-engine</module>
     </modules>
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
         <lombok-version>1.18.32</lombok-version>
         <log4j-version>2.6.2</log4j-version>
+        <httpclient-version>4.5.13</httpclient-version>
     </properties>
 
     <dependencyManagement>
@@ -49,6 +51,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
     </dependencies>
 
