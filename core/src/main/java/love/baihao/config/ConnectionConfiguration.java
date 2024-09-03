@@ -15,11 +15,13 @@ import org.springframework.context.annotation.Configuration;
  * @version: 1.0
  */
 @Configuration
-public class HttpConfiguration {
+public class ConnectionConfiguration {
 
     @Bean
     public HttpClient httpServer() {
         return HttpClients.createDefault();
     }
+
+
 
 }

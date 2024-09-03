@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+#http模式
+listener.http:
+              enable: true
+              service: localhost:3000
+
+#websocket模式
+listener.websocket:
+                   enable: false
+                   service: localhost:3001
+
+

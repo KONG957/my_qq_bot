@@ -25,6 +25,7 @@
         <lombok-version>1.18.32</lombok-version>
         <log4j-version>2.6.2</log4j-version>
         <httpclient-version>4.5.13</httpclient-version>
+        <fastJSON-version>2.0.31</fastJSON-version>
     </properties>
 
     <dependencyManagement>
@@ -60,6 +61,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastJSON-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
 
