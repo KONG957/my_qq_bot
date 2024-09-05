@@ -22,6 +22,6 @@ public class MessageDTO {
      */
     private String type;
 
-    //private List data;
+    private Map<String,Object> data;
 
 }

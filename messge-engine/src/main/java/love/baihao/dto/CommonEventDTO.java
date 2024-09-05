@@ -20,7 +20,7 @@ public class CommonEventDTO {
     /**
      * 事件发生的unix时间戳
      */
-    private Long timme;
+    private Long time;
     /**
      * 收到事件的机器人的 QQ 号
      */

@@ -86,7 +86,7 @@ public class CustomArgumentResolver implements HandlerMethodArgumentResolver {
             // 6 设置参数
             Method method = getSetterMethod(type, field, key);
             if (method != null&&value!=null) {
-                if(field.getType().getSimpleName().equalsIgnoreCase(value.getClass().getSimpleName())){
+                if(field.getType().getSimpleName().equalsIgnoreCase(value.getClass().getSimpleName())||field.getType().isAssignableFrom(value.getClass())){
                     method.invoke(clazz, value);
                 }else {
                     if(field.getType().getSimpleName().equalsIgnoreCase("long")){

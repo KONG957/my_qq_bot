@@ -12,3 +12,5 @@ listener.websocket:
                    service: localhost:3001
 
 
+#j机器人qq号
+robot.qq: 1032432096,1032432097

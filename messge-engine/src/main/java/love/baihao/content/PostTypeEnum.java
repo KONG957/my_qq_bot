@@ -16,13 +16,23 @@ import lombok.Getter;
 @Getter
 public enum PostTypeEnum {
 
-    MESSAGE("message"),
-    MESSAGE_SENT("message_sent"),
-    REQUEST("request"),
-    NOTICE("notice"),
-    META_EVENT("meta_event"),;
+    MESSAGE("message","messageListenerHandler"),
+    MESSAGE_SENT("message_sent","messageSentListenerHandler"),
+    REQUEST("request","requestListenerHandler"),
+    NOTICE("notice","noticeListenerHandler"),
+    META_EVENT("meta_event","metaEventListenerHandler"),;
 
     private String code;
+    private String name;
 
+
+    public static PostTypeEnum getByCode(String code) {
+        for (PostTypeEnum postTypeEnum : PostTypeEnum.values()) {
+            if (postTypeEnum.getCode().equals(code)) {
+                return postTypeEnum;
+            }
+        }
+        return null;
+    }
 
 }
